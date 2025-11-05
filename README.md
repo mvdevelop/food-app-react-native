@@ -1,50 +1,104 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🍱 Food App
 
-## Get started
+A modern **React Native** application built with **TailwindCSS**, designed to deliver a smooth and visually appealing food ordering experience.  
+This project focuses on elegant UI, responsive layouts, and fast performance — ideal for learning and production use.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Features
 
-2. Start the app
+- 📱 **Cross-platform:** Works on both Android and iOS  
+- 🎨 **Styled with TailwindCSS:** Clean, utility-first design system  
+- ⚡ **Fast Refresh:** Instant code updates during development  
+- 🍔 **Food browsing UI:** Explore meals with images, prices, and details  
+- 🔍 **Search and filtering:** Quickly find your favorite dishes  
+- 🛒 **Cart management:** Add, remove, and review orders in real time  
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🛠️ Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- [React Native](https://reactnative.dev/) – Core framework  
+- [Expo](https://expo.dev/) – Development environment and build tools  
+- [TailwindCSS](https://tailwindcss.com/) – Utility-first CSS framework via [NativeWind](https://www.nativewind.dev/)  
+- [React Navigation](https://reactnavigation.org/) – App routing and navigation  
+- [Expo Icons](https://icons.expo.fyi/) – Icon library for UI design  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📦 Installation
 
-When you're ready, run:
+Clone the repository and install dependencies:
 
 ```bash
-npm run reset-project
-```
+git clone https://github.com/mvdevelop/food-app-react-native.git
+cd food-app
+npm install
+Or with Yarn:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+bash
+Copiar código
+yarn install
+▶️ Running the App
+Start the Expo development server:
 
-## Learn more
+bash
+Copiar código
+npx expo start
+Then:
 
-To learn more about developing your project with Expo, look at the following resources:
+Open the Expo Go app on your Android or iOS device.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Scan the QR code shown in your terminal or browser.
 
-## Join the community
+The Food App will launch instantly.
 
-Join our community of developers creating universal apps.
+💅 TailwindCSS Setup (via NativeWind)
+This project uses NativeWind for TailwindCSS styling in React Native.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+You can customize styles in your tailwind.config.js file:
+
+js
+Copiar código
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./App.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+📁 Project Structure
+bash
+Copiar código
+food-app/
+├── assets/             # Images, fonts, and icons
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── screens/        # App screens (Home, Details, Cart, etc.)
+│   ├── navigation/     # Navigation configuration
+│   └── utils/          # Helper functions
+├── App.js              # Main app entry
+├── tailwind.config.js  # TailwindCSS configuration
+└── package.json
+🧩 Scripts
+Command	Description
+npm start	Start the Expo development server
+npm run android	Run on Android device or emulator
+npm run ios	Run on iOS simulator
+npm run web	Run on web (experimental)
+
+📸 Screenshots
+Add screenshots or GIFs of your app here.
+
+🤝 Contributing
+Contributions are welcome!
+Feel free to open issues or submit pull requests to help improve the project.
+
+🧑‍💻 Author
+mvdevelop
+
+📜 License
+This project is licensed under the MIT License.
+See the LICENSE file for more details.
