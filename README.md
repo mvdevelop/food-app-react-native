@@ -31,20 +31,19 @@ This project focuses on elegant UI, responsive layouts, and fast performance —
 
 Clone the repository and install dependencies:
 
-```bash
-git clone https://github.com/mvdevelop/food-app-react-native.git
+bash
+git clone https://github.com/mvdevelop/food-app.git
 cd food-app
 npm install
 Or with Yarn:
-
 bash
-Copiar código
 yarn install
-▶️ Running the App
+
+## ▶️ Running the App
+
 Start the Expo development server:
 
 bash
-Copiar código
 npx expo start
 Then:
 
@@ -54,13 +53,12 @@ Scan the QR code shown in your terminal or browser.
 
 The Food App will launch instantly.
 
-💅 TailwindCSS Setup (via NativeWind)
+## 💅 TailwindCSS Setup (via NativeWind)
 This project uses NativeWind for TailwindCSS styling in React Native.
 
 You can customize styles in your tailwind.config.js file:
 
 js
-Copiar código
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./App.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
@@ -69,9 +67,9 @@ module.exports = {
   },
   plugins: [],
 };
-📁 Project Structure
+
+## 📁 Project Structure
 bash
-Copiar código
 food-app/
 ├── assets/             # Images, fonts, and icons
 ├── src/
@@ -82,23 +80,24 @@ food-app/
 ├── App.js              # Main app entry
 ├── tailwind.config.js  # TailwindCSS configuration
 └── package.json
-🧩 Scripts
+
+## 🧩 Scripts
 Command	Description
 npm start	Start the Expo development server
 npm run android	Run on Android device or emulator
 npm run ios	Run on iOS simulator
 npm run web	Run on web (experimental)
 
-📸 Screenshots
+## 📸 Screenshots
 Add screenshots or GIFs of your app here.
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome!
 Feel free to open issues or submit pull requests to help improve the project.
 
-🧑‍💻 Author
+## 🧑‍💻 Author
 mvdevelop
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
 See the LICENSE file for more details.
