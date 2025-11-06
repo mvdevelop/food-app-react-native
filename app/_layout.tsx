@@ -1,3 +1,4 @@
+
 import "./globals.css";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
